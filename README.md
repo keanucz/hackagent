@@ -27,7 +27,7 @@ Instead of juggling Discord servers, Luma calendars, and spreadsheets to track h
 ### AI-Powered Chat
 - Natural language Q&A about events, deadlines, and hackathon advice
 - Context-aware: knows about all tracked events and deadlines
-- Powered by OpenAI GPT-4o with a cheeky British personality
+- Powered by OpenAI GPT-5.4 with a cheeky British personality
 
 ### Team Matching
 - Set your skills (`/skills python,react,ml`)
@@ -75,14 +75,14 @@ Luffa Robot API (apibot.luffa.im)
 |  [Poller] Message loop           |
 |  [Router] Command + AI routing   |
 |  [Scraper] 19 Luma calendars     |
-|  [Enricher] OpenAI GPT-4o        |
+|  [Enricher] OpenAI GPT-5.4        |
 |  [Reminder] Minute-level checks  |
 |  [Matcher] Skill complementarity |
 +----------------------------------+
       |
       | OpenAI API
       v
-  GPT-4o (enrichment + chat)
+  GPT-5.4 (enrichment + chat)
 ```
 
 - **Single Go binary** — no Docker, no database, no dependencies at runtime
@@ -96,7 +96,7 @@ Luffa Robot API (apibot.luffa.im)
 |-----------|------------|
 | Language | Go 1.25 |
 | Bot API | Luffa Robot API (HTTP polling) |
-| AI | OpenAI GPT-4o |
+| AI | OpenAI GPT-5.4 |
 | Scraping | goquery (HTML parsing) |
 | State | In-memory (sync.RWMutex) |
 

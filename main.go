@@ -222,7 +222,7 @@ func llmChat(systemPrompt, userPrompt string) (string, error) {
 		return "", fmt.Errorf("no OPENAI_API_KEY")
 	}
 	reqBody, _ := json.Marshal(map[string]any{
-		"model": "gpt-4o",
+		"model": "gpt-5.4",
 		"messages": []map[string]string{
 			{"role": "system", "content": systemPrompt},
 			{"role": "user", "content": userPrompt},
